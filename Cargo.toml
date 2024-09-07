@@ -1,0 +1,11 @@
+[package]
+name = "nvidia"
+version = "0.1.8"
+edition = "2021"
+authors = ["Trevor Sullivan <trevor@trevorsullivan.net>"]
+description = "A Rust utility to retrieve information about NVIDIA GPUs installed in your system."
+license = "MIT"
+homepage = "https://github.com/pcgeek86/nvidia-rs"
+
+[dependencies]
+nvml-wrapper = "0.10.0"
