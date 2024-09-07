@@ -1,6 +1,8 @@
 # NVIDIA CLI
 
 This is a command line tool to interface with NVIDIA GPUs.
+This tool has been developed in native Rust code. 🦀
+We rely on the `nvml-wrapper` crate, developed by [@cldfire](https://github.com/cldfire/).
 
 ![screenshot](./assets/screenshot.png)
 

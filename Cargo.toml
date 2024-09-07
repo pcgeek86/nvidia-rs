@@ -1,6 +1,6 @@
 [package]
 name = "nvidia"
-version = "0.1.8"
+version = "0.1.9"
 edition = "2021"
 authors = ["Trevor Sullivan <trevor@trevorsullivan.net>"]
 description = "A Rust utility to retrieve information about NVIDIA GPUs installed in your system."
