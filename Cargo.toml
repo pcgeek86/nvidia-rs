@@ -8,4 +8,6 @@ license = "MIT"
 homepage = "https://github.com/pcgeek86/nvidia-rs"
 
 [dependencies]
+crossterm = "0.28.1"
 nvml-wrapper = "0.10.0"
+ratatui = { version = "0.28.1", features = ["all-widgets"] }
