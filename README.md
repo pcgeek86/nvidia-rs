@@ -7,6 +7,15 @@ For the terminal user interface, we use the popular [ratatui](https://github.com
 
 ![screenshot](https://github.com/pcgeek86/nvidia-rs/blob/master/assets/screenshot02.png?raw=true)
 
+# Supported Configurations
+
+* Operating System:
+  * Windows 11
+  * Ubuntu Server 24.04 LTS Linux
+* NVIDIA Driver must be installed
+  * Linux: `sudo apt-get install nvidia-driver-550-server --yes`
+  * You can use the `nvidia-smi` command to validate that the NVIDIA GPU driver works correctly
+
 # Installation 
 
 Ensure that the [Rust toolchain](https://rustup.rs) is installed on your system.
@@ -39,7 +48,7 @@ cargo uninstall nvidia
 
 * This application only looks at the first NVIDIA GPU in your system. Multiple GPUs not currently supported
 * If you don't have the NVIDIA GeForce driver installed, this utility won't work
-* Only tested this application on Windows 11
+* Only tested this application on Windows 11 and Ubuntu Server Linux
 
 # License
 
