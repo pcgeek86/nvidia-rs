@@ -123,7 +123,6 @@ impl Widget for &NvidiaApp {
             .name("GPU Clock")
             .marker(Marker::Dot)
             .graph_type(ratatui::widgets::GraphType::Line)
-            // .data(&[(0.0, 480.0), (-1.0, 420.0), (-2.0, 825.0), (-3.0, 600.0), (-4.0, 735.0,), (-5.0, 855.0), (-6.0, 600.0), (-7.0, 570.0), (-8.0, 1825.0), (-9.0, 1925.0)]);
             .data(&gpu_clock_data);
         let chart_gpu_clock_x_axis = Axis::default().title("Time").bounds([-30.0, 0.0]);
         let chart_gpu_clock_y_axis = Axis::default().title("GPU Clock Speed").bounds([0.0,2000.0]);
@@ -169,7 +168,7 @@ fn get_nvidia_gpu_info() {
         println!("{0}: GPU Architecture: {1}", gpu_index, gpu.architecture().expect("Failed to retrieve GPU architecture"));
         println!("{0}: GPU Brand: {1:?}", gpu_index, gpu.brand().expect("Failed to get GPU brand"));
         println!("{0}: 🌡️  GPU Temperature: {1:?} °C ", gpu_index, gpu.temperature(TemperatureSensor::Gpu).expect("Failed to retrieve GPU temperature"));
-        println!("{0}: GPU Driver Model: {1:?}", gpu_index, gpu.driver_model().expect("Failed to retrieve GPU driver model").current);
+        // println!("{0}: GPU Driver Model: {1:?}", gpu_index, gpu.driver_model().expect("Failed to retrieve GPU driver model").current);
         println!("{0}: GPU Power Consumption: {1} watts", gpu_index, (gpu.power_usage().expect("Failed to get GPU power consumption")/1000) as f32);
         
     }

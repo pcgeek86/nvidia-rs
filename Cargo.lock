@@ -288,7 +288,7 @@ dependencies = [
 
 [[package]]
 name = "nvidia"
-version = "0.1.12"
+version = "0.1.13"
 dependencies = [
  "crossterm",
  "nvml-wrapper",

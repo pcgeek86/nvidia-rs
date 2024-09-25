@@ -23,6 +23,10 @@ Run this command:
 nvidia
 ```
 
+The program refreshes statistics every 200 milliseconds.
+At the moment, this threshold is not configurable.
+To exit the program, press the `q` key on your keyboard.
+
 # Uninstallation
 
 You can remove the NVIDIA CLI tool with the following command:
